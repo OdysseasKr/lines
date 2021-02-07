@@ -1,7 +1,7 @@
 # lines
 Drawing fun lines with Logo and turtle graphics.
 
-Run and tested on https://www.calormen.com/jslogo/ but will most probably work with other Logo interpreters.
+Run and tested on https://www.calormen.com/jslogo/ but, most probably, will work with other Logo interpreters.
 
 
 ## Examples
