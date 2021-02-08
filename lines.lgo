@@ -2,7 +2,7 @@
 ; CTRLs 1-5: Control the angles They are scaled so that the sum to 360.
 ; Bias: Affects how "flat" the spikes will appear at their peak
 
-to spikey :amount :ctrl1 :ctrl2 :ctrl3 :ctrl4 :ctrl5 :bias
+TO spikey :amount :ctrl1 :ctrl2 :ctrl3 :ctrl4 :ctrl5 :bias
   repeat :amount [
     ; Scale ctrl variables to 360
     make "s (:ctrl1 + :ctrl2 + :ctrl3 + :ctrl4 + :ctrl5)
@@ -20,6 +20,17 @@ to spikey :amount :ctrl1 :ctrl2 :ctrl3 :ctrl4 :ctrl5 :bias
     rt :ctrl5 * :f
   ]
 END
+
+TO cirque :amount :ctrl1 :ctrl2
+  repeat :amount [
+    repeat 180 [
+      fd 5
+      rt :ctrl1
+    ]
+  rt :ctrl2
+]
+END
+
 
 
 ; An example drawing that sets colors, pen size and draws a spikey
